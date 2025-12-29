@@ -1,0 +1,9 @@
+CREATE DATABASE geolab;
+// Set the working database schema
+CREATE OR REPLACE SCHEMA geolab.performance;
+USE geolab.performance;
+USE WAREHOUSE my_wh;
+ALTER SESSION SET GEOGRAPHY_OUTPUT_FORMAT='WKT';
+ALTER SESSION SET USE_CACHED_RESULT = FALSE;
+
+SHOW DATABASES
